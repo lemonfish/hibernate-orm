@@ -74,7 +74,7 @@ public class DefaultAutoFlushEventListener extends AbstractFlushingEventListener
 		finally {
 			eventListenerManager.partialFlushEnd(
 					event.getNumberOfEntitiesProcessed(),
-					event.getNumberOfEntitiesProcessed()
+					event.getNumberOfCollectionsProcessed()
 			);
 		}
 	}
